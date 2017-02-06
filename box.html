@@ -1,0 +1,28 @@
+<a-camera>
+      <a-cursor></a-cursor>
+    </a-camera>
+    
+    <a-light type="point" intensity="2" position="0 2 9"></a-light>
+    
+   
+
+    <a-assets>
+      <img id='textureBox' src='http://www.aulafacil.com/uploads/cursos/483/editor/image01.jpg' >
+    </a-assets>
+    
+    <a-box src='#textureBox' position="0 2 -5" rotation='0 45 45' scale='2 2 2'>
+        <a-animation attribute='position' to='0 2 -6'
+                     direction='alternate' duration='2000' repeat='infinite' ></a-animation>
+      
+        <a-animation attribute='rotation' to='45 0 50' begin='click'
+                     direction='alternate' duration='1000' repeat='infinite' ></a-animation>
+      
+    </a-box>
+    
+    <a-plane src='#textureBox' 
+             rotation='-90 0 100' width='30' 
+             height='30' position='0 0 -15'
+             repeat='10 10'></a-plane>
+    
+    
+    <a-sky color='#323232'> 
